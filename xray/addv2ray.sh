@@ -13,6 +13,9 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
+CHATID="847645599"
+KEY="6161077752:AAF_yCjVqYwfZ0dxli49UNemaAxPuTpJ5oQ"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 domain=$(cat /etc/xray/domain)
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
