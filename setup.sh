@@ -49,6 +49,9 @@ wget https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/backup/set-br.sh &&
 wget https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/websocket/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
 wget https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+# UDP SERVER
+wget https://raw.githubusercontent.com/Tarap-Kuhing/vps/main/websocket/udp.py && chmod +x udp.sh && ./udp.sh
+wget https://raw.githubusercontent.com/Tarap-Kuhing/vps/main/websocket/udp-custom-linux-amd64 && chmod +x udp-custom-linux-amd64 && ./udp-custom-linux-amd64
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -60,6 +63,8 @@ rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 rm -f /root/edu.sh
 rm -f /root/ohp.sh
+rm -f /root/udp.py
+rm -f /root/udp-custom-linux-amd64
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
