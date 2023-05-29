@@ -85,6 +85,7 @@ chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 echo " "
+clear
 echo "Installation has been completed!!"echo " "
 echo "============================================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
@@ -135,4 +136,4 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo " Reboot 10 Sec"
 sleep 10
 rm -f setup.sh
-reboot
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2" -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp
