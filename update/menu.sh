@@ -18,8 +18,10 @@ echo -e "$yy 8$y.  VMESS MENU$wh"
 echo -e "$yy 9$y.  VLESS MENU$wh"
 echo -e "$yy 10$y. TROJAN GFW MENU$wh"
 echo -e "$yy 11$y. TROJAN GO MENU$wh"
-echo -e "$yy 12$y. Settings$wh"
-echo -e "$yy 13$y. Exit$wh"
+echo -e "$yy 12$y. RUNNING SERVER$wh"
+echo -e "$yy 13$y. SETTINGS$wh"
+echo -e "$yy 14$y. UPDATE$wh"
+echo -e "$yy 15$y. Exit$wh"
 echo -e "$y-------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 13 ] : " menu
 case $menu in
@@ -65,13 +67,21 @@ trmenu
 ;;
 11)
 clear
-trgomenu
+running
 ;;
 12)
 clear
-setmenu
+trgomenu
 ;;
 13)
+clear
+setmenu
+;;
+14)
+clear
+update
+;;
+15)
 clear
 exit
 ;;
