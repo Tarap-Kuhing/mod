@@ -8,14 +8,14 @@ wh="\033[0m"
 echo -e "$y                  MENU UTAMA $wh"
 echo -e "$y-------------------------------------------------$wh"
 echo -e "$yy 1$y.  SSH & OpenVPN MENU  $wh"
-echo -e "$yy 2$y.  L2TP MENU$wh"
-echo -e "$yy 3$y.  PPTP MENU$wh"
+echo -e "$yy 2$y.  VMESS MENU$wh"
+echo -e "$yy 3$y.  VLESS MENU$wh"
 echo -e "$yy 4$y.  SSTP MENU$wh"
 echo -e "$yy 5$y.  WIREGUARD MENU$wh"
 echo -e "$yy 6$y.  SHADOWSOCKS MENU$wh"
 echo -e "$yy 7$y.  SHADOWSOCKSR MENU$wh"
-echo -e "$yy 8$y.  VMESS MENU$wh"
-echo -e "$yy 9$y.  VLESS MENU$wh"
+echo -e "$yy 8$y.  L2TP MENU$wh"
+echo -e "$yy 9$y.  PPTP MENU$wh"
 echo -e "$yy 10$y. TROJAN GFW MENU$wh"
 echo -e "$yy 11$y. TROJAN GO MENU$wh"
 echo -e "$yy 12$y. RUNNING SERVER$wh"
@@ -31,11 +31,11 @@ sshovpnmenu
 ;;
 2)
 clear
-l2tpmenu
+vmessmenu
 ;;
 3)
 clear
-pptpmenu
+vlessmenu
 ;;
 4)
 clear
@@ -55,11 +55,11 @@ ssrmenu
 ;;
 8)
 clear
-vmessmenu
+l2tpmenu
 ;;
 9)
 clear
-vlessmenu
+pptpmenu
 ;;
 10)
 clear
