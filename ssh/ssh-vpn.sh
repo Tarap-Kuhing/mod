@@ -391,7 +391,8 @@ cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/menu.sh"
-wget -O running "https://${akbarvpn}/running.sh"
+wget -O running "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh/running.sh"
+wget -O update "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh/update.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"
@@ -470,6 +471,7 @@ chmod +x setmenu
 chmod +x addhost
 chmod +x menu
 chmod +x running
+chmod +x update
 chmod +x addssh
 chmod +x trialssh
 chmod +x delssh
