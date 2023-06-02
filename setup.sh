@@ -29,6 +29,8 @@ if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+mkdir -p /etc/xray
+touch /etc/xray/domain
 mkdir /var/lib/Tarap-Kuhing;
 echo "IP=" >> /var/lib/Tarap-Kuhing/ipvps.conf
 wget https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
