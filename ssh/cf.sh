@@ -15,6 +15,6 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 read -rp "Domain/Host : " -e domain
 echo "IP=$domain" > /var/lib/Tarap-Kuhing/ipvps.conf
-rm -rf /etc/xray/domain
+echo "IP=$domain" > /var/lib/ipvps.conf
 echo $domain > /etc/xray/domain
 cd
