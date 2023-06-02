@@ -67,11 +67,11 @@ trmenu
 ;;
 11)
 clear
-running
+trgomenu
 ;;
 12)
 clear
-trgomenu
+running
 ;;
 13)
 clear
