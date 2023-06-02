@@ -52,7 +52,7 @@ wget https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ohp/ohp.sh && chmod
 # UDP SERVER
 wget https://raw.githubusercontent.com/Tarap-Kuhing/vps/main/websocket/udp.py && chmod +x udp.sh && ./udp.sh
 wget https://raw.githubusercontent.com/Tarap-Kuhing/vps/main/websocket/udp-custom-linux-amd64 && chmod +x udp-custom-linux-amd64 && ./udp-custom-linux-amd64
-
+clear
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
