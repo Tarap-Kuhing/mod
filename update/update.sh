@@ -1,5 +1,14 @@
 #!/bin/bash
-echo -e"SEDANG MELAKUKAN UPDATE SCRIPT"
+# Link Hosting Kalian
+akbarvpn="raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh"
+
+# Link Hosting Kalian Untuk Xray
+akbarvpnn="raw.githubusercontent.com/Tarap-Kuhing/mod/main/xray"
+
+# Link Hosting Kalian Untuk Trojan Go
+akbarvpnnn="raw.githubusercontent.com/Tarap-Kuhing/mod/main/trojango"
+
+echo -e "SEDANG MELAKUKAN UPDATE SCRIPT"
 sleep 2
 
 rm -rf portsshnontls
