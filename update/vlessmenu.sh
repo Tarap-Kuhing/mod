@@ -1,44 +1,40 @@
 #!/bin/bash
+# //====================================================
+# //	System Request:Debian 9+/Ubuntu 18.04+/20+
+# //	Author:	Tarap-Kuhing
+# //	Dscription: Xray Menu Management
+# //	email: merahjambo@gmail.com
+# //  telegram: https://t.me/Baung2012
+# //====================================================
+# // font color configuration | T A R A P  K U H I N G AUTOSCRIPT
 clear
-m="\033[0;1;36m"
-y="\033[0;1;37m"
-yy="\033[0;1;32m"
-yl="\033[0;1;33m"
-wh="\033[0m"
-echo -e "$y                          VLESS $wh"
-echo -e "$y-------------------------------------------------------------$wh"
-echo -e "$yy 1$y. Create Account XRAYS Vless Websocket"
-echo -e "$yy 2$y. Delete Account XRAYS Vless Websocket"
-echo -e "$yy 3$y. Extending Account XRAYS Vless Active Life"
-echo -e "$yy 4$y. Check User Login XRAYS Vless"
-echo -e "$yy 5$y. Menu"
-echo -e "$yy 6$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 6 ] : " menu
+grenbo="\e[92;1m"
+NC='\033[0m'
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          MENU MANAGER VLESS              $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mCreating a Vless Account${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mDelete Vless Account${NC}"
+echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mRenew Vless Account${NC}"
+echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mCheck Vless login Account${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
+read -p "Select From Options [ 1 - 4 ] : " menu
 case $menu in
 1)
-addvless
-;;
+    addvless
+    ;;
 2)
-delvless
-;;
+    delvless
+    ;;
 3)
-renewvless
-;;
+    renewvless
+    ;;
 4)
-cekvless
-;;
-5)
-clear
-menu
-;;
-6)
-clear
-exit
-;;
+    cekvless
+    ;;
 *)
-clear
-menu
-;;
+    menu
+    ;;
 esac
