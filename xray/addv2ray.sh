@@ -9,8 +9,8 @@
 # // font color configuration | TARAP KUHING AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 TIMES="10"
-CHATID=`cat /etc/Tarap-Kuhing/id`
-KEY=`cat /etc/Tarap-Kuhing/token`
+CHATID="847645599"
+KEY="6220473435:AAFMXN_nqeaZc2Q0N5-Dh8s4E1rHYm7Ry1Q"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domain=$(cat /etc/xray/domain)
 clear
