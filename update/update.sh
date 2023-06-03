@@ -208,6 +208,6 @@ chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x botapi
 echo -e "UPDATE SCRIPT SELESAI"
-sleep5
+sleep 5
 cd
 menu
