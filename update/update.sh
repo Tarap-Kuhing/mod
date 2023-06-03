@@ -75,6 +75,7 @@ rm -rf deltrgo
 rm -rf renewtrgo
 rm -rf cektrgo
 rm -rf botapi
+rm -rf listvmess
 
 # download script
 cd /usr/bin
@@ -141,6 +142,7 @@ wget -O trmenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/t
 wget -O trgomenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/trgomenu.sh"
 wget -O setmenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/setmenu.sh"
 wget -O botapi "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh/botapi"
+wget -O listvmess "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/listvmess.sh"
 
 
 chmod +x portsshnontls
@@ -207,6 +209,7 @@ chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x botapi
+chmod +x listvmess
 echo -e "UPDATE SCRIPT SELESAI"
 sleep 5
 cd
