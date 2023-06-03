@@ -1,15 +1,5 @@
 #!/bin/bash
 clear
-NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/vmess")
-	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-		clear
-		echo ""
-		echo "You have no existing clients!"
-		exit 1
-	fi
-
-	clear
-	echo ""
 	echo "Select the existing client you want to renew"
 	echo " Press CTRL+C to return"
 	echo -e "==============================="
