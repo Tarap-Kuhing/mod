@@ -106,6 +106,9 @@ systemctl reload nginx
 service cron restart
 clear
 echo -e ""
+echo -e "### $user $exp
+},{"id": "$uuid" | tee -a /etc/xray/vmess/$user.log
+clear
 echo -e "======-XRAYS/VMESS-======" | tee -a /etc/xray/vmess/$user.log
 echo -e "Remarks     : ${user}" | tee -a /etc/xray/vmess/$user.log
 echo -e "IP/Host     : ${MYIP}" | tee -a /etc/xray/vmess/$user.log
