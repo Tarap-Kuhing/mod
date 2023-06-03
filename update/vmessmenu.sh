@@ -18,6 +18,7 @@ echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mCreating a Vmess Account${NC}
 echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mDelete Vmess Account${NC}"
 echo -e "\033[1;93m│  ${grenbo}3.${NC} \033[0;36mRenew Vmess Account${NC}"
 echo -e "\033[1;93m│  ${grenbo}4.${NC} \033[0;36mCheck Vmess login Account${NC}"
+echo -e "\033[1;93m│  ${grenbo}5.${NC} \033[0;36mUser Vmess Account  ${NC}"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p "Select From Options [ 1 - 4 ] : " menu
@@ -33,6 +34,9 @@ case $menu in
     ;;
 4)
     cekvmess
+    ;;
+5)
+    listvmess
     ;;
 *)
     menu
