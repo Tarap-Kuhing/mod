@@ -142,7 +142,7 @@ wget -O trmenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/t
 wget -O trgomenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/trgomenu.sh"
 wget -O setmenu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/setmenu.sh"
 wget -O botapi "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/ssh/botapi"
-wget -O listvmess "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/listvmess.sh"
+wget -O listvmess "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/xray/listvmess.sh"
 
 
 chmod +x portsshnontls
