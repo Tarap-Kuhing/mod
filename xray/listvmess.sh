@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-tarap=$(cat /etc/xray/vmess/)
+tarap=$(cat /etc/xray/vmess)
 echo "$tarap"
 echo""
 echo""
