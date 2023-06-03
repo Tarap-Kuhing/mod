@@ -41,7 +41,7 @@ sed -i '/#xray-vmess-tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'"' /etc/xray/config.json
 sed -i '/#xray-vmess-nontls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'"' /etc/xray/config.json
-cat>/etc/xray/vmess-$user-tls.json<<EOF
+cat>/etc/xray/vmess-tls.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -73,7 +73,7 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
 EOF
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 vmess_base642=$( base64 -w 0 <<< $vmess_json2)
-xrayv2ray1="vmess://$(base64 -w 0 /etc/xray/vmess-$user-tls.json)"
+xrayv2ray1="vmess://$(base64 -w 0 /etc/xray/vmess-tls.json)"
 xrayv2ray2="vmess://$(base64 -w 0 /etc/xray/vmess-$user-nontls.json)"
 TEXT="
 <code>───────────────────────────</code>
@@ -99,16 +99,13 @@ TEXT="
 <code>───────────────────────────</code>
 <code>Expired On : $hariini</code>
 <code>Expired On : $exp</code>"
-rm -rf /etc/xray/vmess-$user-tls.json
+#rm -rf /etc/xray/vmess-$user-tls.json
 rm -rf /etc/xray/vmess-$user-nontls.json
 systemctl restart xray.service
 systemctl reload nginx
 service cron restart
 clear
 echo -e ""
-echo -e "### $user $exp
-},{"id": "$uuid" | tee -a /etc/xray/vmess/$user.log
-clear
 echo -e "======-XRAYS/VMESS-======" | tee -a /etc/xray/vmess/$user.log
 echo -e "Remarks     : ${user}" | tee -a /etc/xray/vmess/$user.log
 echo -e "IP/Host     : ${MYIP}" | tee -a /etc/xray/vmess/$user.log
