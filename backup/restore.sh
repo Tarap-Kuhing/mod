@@ -32,8 +32,8 @@ cp passwd1 /etc/ipsec.d/passwd
 cp ss.conf /etc/shadowsocks-libev/ss.conf
 cp -r Tarap-Kuhing /var/lib/
 cp -r sstp /home/
-cp -r xray /etc/
-cp -r trojan-go /etc/
+cp -r xray /etc/ backup/xray
+cp -r trojan-go /etc/ backup/trojan-go
 cp -r shadowsocksr /usr/local/
 cp -r public_html /home/vps/
 cp crontab /etc/
