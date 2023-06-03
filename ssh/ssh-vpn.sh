@@ -393,8 +393,8 @@ cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/menu.sh"
-wget -O running "https://${akbarvpn}/running.sh"
-wget -O menu "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/update.sh"
+wget -O running "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/running.sh"
+wget -O update "https://raw.githubusercontent.com/Tarap-Kuhing/mod/main/update/update.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"
@@ -554,7 +554,6 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7900 --max-clients 500
 history -c
 echo "unset HISTFILE" >> /etc/profile
 
-cd
 rm -f /root/key.pem
 rm -f /root/cert.pem
 rm -f /root/ssh-vpn.sh
