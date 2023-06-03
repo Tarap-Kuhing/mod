@@ -123,4 +123,3 @@ echo -e "Link TLS    : ${xrayv2ray1}" | tee -a /etc/xray/{$user}.log
 echo -e "=========================" | tee -a /etc/xray/{$user}.log
 echo -e "Link No TLS : ${xrayv2ray2}" | tee -a /etc/xray/{$user}.log
 echo -e "=========================" | tee -a /etc/xray/{$user}.log
-menu
