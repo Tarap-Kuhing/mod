@@ -105,21 +105,21 @@ systemctl reload nginx
 service cron restart
 clear
 echo -e ""
-echo -e "======-XRAYS/VMESS-======" | tee -a /etc/xray/{$user}.log
-echo -e "Remarks     : ${user}" | tee -a /etc/xray/{$user}.log
-echo -e "IP/Host     : ${MYIP}" | tee -a /etc/xray/{$user}.log
-echo -e "Address     : ${domain}" | tee -a /etc/xray/{$user}.log
-echo -e "Port TLS    : ${tls}" | tee -a /etc/xray/{$user}.log
-echo -e "Port No TLS : ${nontls}" | tee -a /etc/xray/{$user}.log
-echo -e "User ID     : ${uuid}" | tee -a /etc/xray/{$user}.log
-echo -e "Alter ID    : 0" | tee -a /etc/xray/{$user}.log
-echo -e "Security    : auto" | tee -a /etc/xray/{$user}.log
-echo -e "Network     : ws" | tee -a /etc/xray/{$user}.log
-echo -e "Path        : /vmess" | tee -a /etc/xray/{$user}.log
-echo -e "Created     : $hariini" | tee -a /etc/xray/{$user}.log
-echo -e "Expired     : $exp" | tee -a /etc/xray/{$user}.log
-echo -e "=========================" | tee -a /etc/xray/{$user}.log
-echo -e "Link TLS    : ${xrayv2ray1}" | tee -a /etc/xray/{$user}.log
-echo -e "=========================" | tee -a /etc/xray/{$user}.log
-echo -e "Link No TLS : ${xrayv2ray2}" | tee -a /etc/xray/{$user}.log
-echo -e "=========================" | tee -a /etc/xray/{$user}.log
+echo -e "======-XRAYS/VMESS-======" | tee -a /etc/xray/$user.log
+echo -e "Remarks     : ${user}" | tee -a /etc/xray/$user.log
+echo -e "IP/Host     : ${MYIP}" | tee -a /etc/xray/$user.log
+echo -e "Address     : ${domain}" | tee -a /etc/xray/$user.log
+echo -e "Port TLS    : ${tls}" | tee -a /etc/xray/$user.log
+echo -e "Port No TLS : ${nontls}" | tee -a /etc/xray/$user.log
+echo -e "User ID     : ${uuid}" | tee -a /etc/xray/$user.log
+echo -e "Alter ID    : 0" | tee -a /etc/xray/$user.log
+echo -e "Security    : auto" | tee -a /etc/xray/$user.log
+echo -e "Network     : ws" | tee -a /etc/xray/$user.log
+echo -e "Path        : /vmess" | tee -a /etc/xray/$user.log
+echo -e "Created     : $hariini" | tee -a /etc/xray/$user.log
+echo -e "Expired     : $exp" | tee -a /etc/xray/$user.log
+echo -e "=========================" | tee -a /etc/xray/$user.log
+echo -e "Link TLS    : ${xrayv2ray1}" | tee -a /etc/xray/$user.log
+echo -e "=========================" | tee -a /etc/xray/$user.log
+echo -e "Link No TLS : ${xrayv2ray2}" | tee -a /etc/xray/$user.log
+echo -e "=========================" | tee -a /etc/xray/$user.log
