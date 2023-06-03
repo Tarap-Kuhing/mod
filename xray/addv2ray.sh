@@ -17,6 +17,7 @@ KEY="6220473435:AAFMXN_nqeaZc2Q0N5-Dh8s4E1rHYm7Ry1Q"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
+touch /etc/xray/vmess
 clear
 domain=$(cat /etc/xray/domain)
 tls="$(cat ~/log-install.txt | grep -w "Vmess TLS" | cut -d: -f2|sed 's/ //g')"
