@@ -16,9 +16,8 @@ echo -e "$yy 6$y.  Delete SSH & OpenVpn Account"
 echo -e "$yy 7$y.  Delete User Expired SSH & OpenVPN"
 echo -e "$yy 8$y.  Set up Autokill SSH"
 echo -e "$yy 9$y.  Displays Users Who Do Multi Login SSH"
-echo -e "$yy 10$y. Restart All Service"
-echo -e "$yy 11$y. Menu Utama"
-echo -e "$yy 12$y. Exit"
+echo -e "$yy 10$y. Menu Utama"
+echo -e "$yy 11$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 12 ] : " menu
 echo -e ""
@@ -51,12 +50,9 @@ autokill
 ceklim
 ;;
 10)
-restart
-;;
-11)
 menu
 ;;
-12)
+11)
 clear
 exit
 ;;
