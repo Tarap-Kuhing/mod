@@ -1,5 +1,6 @@
 #!/bin/bash
-NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/vmess-tls.json")
+clear
+NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		clear
 		echo ""
@@ -9,15 +10,14 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/vmess-tls.json")
 
 	clear
 	echo ""
-	echo "Select the existing name client you want to list"
+	echo "Masukan Nama User Kamu"
 	echo " Press CTRL+C to return"
 	echo -e "==============================="
-	grep -E "^### " "/etc/xray/vmess-tls.json" | cut -d ' ' -f 2-3 | nl -s ') '
-#tarap=$(cat /etc/xray/vmess)
-#echo "$tarap"
-#echo""
-#echo""
-read -rp "Masukan Name User : " user
+	grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | nl -s ') '
+	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
+	read -rp "Masukan Name User : " user
+echo ""
+echo ""
 list=$(cat /etc/xray/vmess/$user.log)
 clear
 echo "$list"
