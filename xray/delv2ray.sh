@@ -1,5 +1,4 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -52,7 +51,9 @@ exp=$(grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIE
 sed -i "/^### $user $exp/,/^},{/d" /etc/xray/config.json
 sed -i "/^### $user $exp/,/^},{/d" /etc/xray/config.json
 rm -f /etc/xray/vmess-$user-tls.json /etc/xray/vmess-$user-nontls.json
+rm -f /etc/xray/vmess/$user.log
 systemctl restart xray.service
+systemctl restart nginx
 clear
 echo ""
 echo "==============================="
