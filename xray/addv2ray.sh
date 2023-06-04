@@ -1,5 +1,4 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -41,7 +40,7 @@ sed -i '/#xray-vmess-tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'"' /etc/xray/config.json
 sed -i '/#xray-vmess-nontls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'"' /etc/xray/config.json
-cat>/etc/xray/vmess-tls.json<<EOF
+cat>/etc/xray/vmess-$user-tls.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -98,8 +97,9 @@ TEXT="
 <code>${xrayv2ray2}</code>
 <code>───────────────────────────</code>
 <code>Expired On : $hariini</code>
-<code>Expired On : $exp</code>"
-#rm -rf /etc/xray/vmess-$user-tls.json
+<code>Expired On : $exp</code>
+"
+rm -rf /etc/xray/vmess-$user-tls.json
 rm -rf /etc/xray/vmess-$user-nontls.json
 systemctl restart xray.service
 systemctl reload nginx
